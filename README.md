@@ -21,7 +21,11 @@ Ein terminalbasierter 3D-Labyrinth-Explorer mit ASCII-Raycasting-Rendering. Erku
 
 ## Screenshots
 
+_v1.0_
 <img width="1920" height="1040" alt="image" src="https://github.com/user-attachments/assets/ca6e4766-1c60-4a4a-8ad1-93aab876adbd" />
+_V1.1_
+<img width="1920" height="1040" alt="image" src="https://github.com/user-attachments/assets/2e5f21da-669f-45b2-9c12-e4cb5a2e54a0" />
+
 
 
 ## Installation
@@ -87,7 +91,7 @@ Es könnte sein dass es kaputt geht wenn sie dass fenster Fergrößern
 
 ## Zukünftige Erweiterungen
 
-* [ ] Texturierte Wände mit unterschiedlichen Zeichen/Farben
+* [x] Wände mit unterschiedlichen Zeichen/Farben
 * [ ] Mehrere Ebenen
 * [ ] Gegner / Sammelobjekte
 * [ ] Speichern/Laden von Labyrinthen
@@ -103,10 +107,6 @@ Beiträge sind willkommen!
 * Feature-Ideen vorschlagen
 * Pull Requests einreichen
 * Dokumentation verbessern
-
-## Lizenz
-
-Dieses Projekt steht unter der **MIT-Lizenz** – siehe die Datei [LICENSE](LICENSE) für Details.
 
 ## Danksagungen
 
