@@ -21,9 +21,9 @@ Ein terminalbasierter 3D-Labyrinth-Explorer mit ASCII-Raycasting-Rendering. Erku
 
 ## Screenshots
 
-_v1.0_
+**V1.0**
 <img width="1920" height="1040" alt="image" src="https://github.com/user-attachments/assets/ca6e4766-1c60-4a4a-8ad1-93aab876adbd" />
-_V1.1_
+**V1.1**
 <img width="1920" height="1040" alt="image" src="https://github.com/user-attachments/assets/2e5f21da-669f-45b2-9c12-e4cb5a2e54a0" />
 
 
