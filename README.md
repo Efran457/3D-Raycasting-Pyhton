@@ -116,8 +116,8 @@ Dieses Projekt steht unter der **MIT-Lizenz** – siehe die Datei [LICENSE](LICE
 
 ## Autor
 
-Erstellt mit ❤️ von **Initys**
-Youtube📹 Kanal: [https://www.youtube.com/@Initys-unityGames]
+* Erstellt mit ❤️ von **Initys**
+* Youtube📹 Kanal: [https://www.youtube.com/@Initys-unityGames]
 
 ---
 
