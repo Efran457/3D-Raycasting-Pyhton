@@ -16,6 +16,7 @@ A terminal-based 3D maze explorer using ASCII raycasting rendering. Navigate thr
 - **Interactive Minimap** - Toggle-able overhead view showing your position and direction
 - **Distance-based Shading** - Walls appear darker when closer, creating depth perception
 - **Regenerate Mazes** - Press R to explore a brand new randomly generated labyrinth
+- **Easy to open** - Just open the exe in the 3DLooker folder SUPER EASY
 
 ## Screenshots
 
