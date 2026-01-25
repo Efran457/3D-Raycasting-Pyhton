@@ -1,27 +1,28 @@
-# 3D-Raycasting-Pyhton
-This is a 3D Racasting programm that uses a python library called curses (curses makes it easy to display text on a corandiant)
+# 3D-Raycasting-Python
+
+Dies ist ein 3D-Raycasting-Programm, das die Python-Bibliothek **curses** verwendet. Curses macht es einfach, Text an bestimmten Koordinaten im Terminal darzustellen.
 
 # 3D Looker
 
-A terminal-based 3D maze explorer using ASCII raycasting rendering. Navigate through procedurally generated labyrinths in your command line!
+Ein terminalbasierter 3D-Labyrinth-Explorer mit ASCII-Raycasting-Rendering. Erkunde prozedural generierte Labyrinthe direkt in deiner Kommandozeile!
 
-![3D Looker Demo](https://img.shields.io/badge/Python-3.x-blue.svg)
+![Python](https://img.shields.io/badge/Python-3.x-blue.svg)
 ![Platform](https://img.shields.io/badge/platform-Windows-blue.svg)
 
 ## Features
 
-- **Raycasting 3D Renderer** - Classic pseudo-3D rendering similar to Wolfenstein 3D
-- **Procedural Maze Generation** - Uses recursive backtracking algorithm to create perfect mazes
-- **Real-time Navigation** - Smooth WASD/Arrow key controls
-- **Interactive Minimap** - Toggle-able overhead view showing your position and direction
-- **Distance-based Shading** - Walls appear darker when closer, creating depth perception
-- **Regenerate Mazes** - Press R to explore a brand new randomly generated labyrinth
-- **Easy to open** - Just open the exe in the 3DLooker folder SUPER EASY
+* **3D-Raycasting-Renderer** – Klassisches Pseudo-3D-Rendering ähnlich wie *Wolfenstein 3D*
+* **Prozedurale Labyrinth-Generierung** – Verwendet den rekursiven Backtracking-Algorithmus
+* **Echtzeit-Navigation** – Flüssige Steuerung mit WASD oder Pfeiltasten
+* **Interaktive Minimap** – Ein-/ausblendbare Übersicht mit Position und Blickrichtung
+* **Distanzabhängige Schattierung** – Wände erscheinen dunkler, je näher sie sind (Tiefeneffekt)
+* **Labyrinth neu generieren** – Drücke **R**, um ein neues zufälliges Labyrinth zu erzeugen
+* **Einfach zu starten** – Einfach die `.exe` im 3DLooker-Ordner öffnen – super easy
 
 ## Screenshots
 
 ```
-W/S: Move | A/D: Rotate | M: Map | R: New Maze | Q: Quit
+W/S: Bewegen | A/D: Drehen | M: Karte | R: Neues Labyrinth | Q: Beenden
 ▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓▓
 ▓█ █ █████ █████ █ █▓
 ▓  @ █   █ █   █ █  ▓
@@ -55,89 +56,97 @@ W/S: Move | A/D: Rotate | M: Map | R: New Maze | Q: Quit
 
 ## Installation
 
-### Prerequisites
+### Voraussetzungen
 
-- Python 3.x
-- Terminal with Unicode support (most modern terminals)
+* Python 3.x
+* Terminal mit Unicode-Unterstützung (die meisten modernen Terminals)
 
-### Setup
+### Einrichtung
 
-1. Clone the repository:
+1. Repository klonen:
+
 ```bash
 git clone https://github.com/yourusername/3d-looker.git
 cd 3d-looker
 ```
 
-2. Run the game:
+2. Spiel starten:
+
 ```bash
 python 3DLooker.py
 ```
 
-No additional dependencies required - uses Python's built-in `curses` library!
+Keine zusätzlichen Abhängigkeiten notwendig – es wird nur die integrierte **curses**-Bibliothek von Python verwendet.
 
-## Controls
+## Steuerung
 
-| Key | Action |
-|-----|--------|
-| `W` / `↑` | Move forward |
-| `S` / `↓` | Move backward |
-| `A` / `←` | Rotate left |
-| `D` / `→` | Rotate right |
-| `M` | Toggle minimap |
-| `R` | Regenerate new maze |
-| `Q` | Quit game |
+| Taste     | Aktion                     |
+| --------- | -------------------------- |
+| `W` / `↑` | Vorwärts bewegen           |
+| `S` / `↓` | Rückwärts bewegen          |
+| `A` / `←` | Nach links drehen          |
+| `D` / `→` | Nach rechts drehen         |
+| `M`       | Minimap ein-/ausblenden    |
+| `R`       | Neues Labyrinth generieren |
+| `Q`       | Spiel beenden              |
 
-## How It Works
+## Funktionsweise
 
-### Raycasting Algorithm
+### Raycasting-Algorithmus
 
-The renderer uses a raycasting technique where:
-1. For each column of the screen, a ray is cast from the player's position
-2. The ray travels until it hits a wall
-3. Wall height is calculated based on distance (closer = taller)
-4. Fish-eye distortion is corrected using cosine compensation
-5. Distance-based shading creates depth perception
+Der Renderer verwendet eine Raycasting-Technik:
 
-### Maze Generation
+1. Für jede Bildschirmspalte wird ein Strahl von der Spielerposition ausgesendet
+2. Der Strahl bewegt sich vorwärts, bis er eine Wand trifft
+3. Die Wandhöhe wird anhand der Distanz berechnet (näher = höher)
+4. Fischaugen-Verzerrung wird durch Kosinus-Korrektur reduziert
+5. Distanzabhängige Schattierung erzeugt einen Tiefeneffekt
 
-Mazes are generated using the **recursive backtracking algorithm**:
-1. Start with a grid filled with walls
-2. Choose a random starting cell and mark it as a passage
-3. While there are unvisited neighbors:
-   - Choose a random unvisited neighbor
-   - Remove the wall between them
-   - Move to the neighbor and repeat
-4. Backtrack when stuck until all cells are visited
+### Labyrinth-Generierung
 
-This creates a "perfect maze" - exactly one path between any two points.
+Die Labyrinthe werden mit dem **rekursiven Backtracking-Algorithmus** erzeugt:
 
-## Customization
+1. Starte mit einem Gitter voller Wände
+2. Wähle eine zufällige Startzelle und markiere sie als Gang
+3. Solange es unbesuchte Nachbarn gibt:
 
-### Adjust Maze Size
+   * Wähle einen zufälligen unbesuchten Nachbarn
+   * Entferne die Wand zwischen den Zellen
+   * Bewege dich zum Nachbarn und wiederhole
+4. Wenn keine Nachbarn mehr vorhanden sind, gehe zurück, bis alle Zellen besucht sind
 
-Edit the `main()` function:
-```python
-maze_width = 21   # Must be odd number
-maze_height = 15  # Must be odd number
-```
+Das Ergebnis ist ein „perfektes Labyrinth“ – zwischen zwei Punkten existiert genau ein Weg.
 
-### Change Field of View
+## Anpassungen
+
+### Labyrinth-Größe ändern
+
+In der `main()`-Funktion:
 
 ```python
-fov = math.pi / 3  # 60 degrees (π/3 radians)
+maze_width = 21   # Muss eine ungerade Zahl sein
+maze_height = 15  # Muss eine ungerade Zahl sein
 ```
 
-### Modify Movement Speed
+### Sichtfeld (Field of View) ändern
 
-In the `Player` class:
+```python
+fov = math.pi / 3  # 60 Grad (π/3 Radiant)
+```
+
+### Bewegungsgeschwindigkeit anpassen
+
+In der `Player`-Klasse:
+
 ```python
 def move_forward(self, game_map):
-    new_x = self.x + self.dir_x * 0.3  # Change 0.3 to adjust speed
+    new_x = self.x + self.dir_x * 0.3  # Wert ändern, um Geschwindigkeit anzupassen
 ```
 
-### Customize Shading
+### Schattierung anpassen
 
-In the raycasting loop:
+In der Raycasting-Schleife:
+
 ```python
 if distance < 2:
     char = "#"
@@ -145,72 +154,75 @@ elif distance < 4:
     char = "+"
 elif distance < 8:
     char = "-"
-# Add more levels or change characters
+# Weitere Stufen hinzufügen oder Zeichen ändern
 ```
 
-## Technical Details
+## Technische Details
 
-- **Language**: Python 3
-- **Rendering**: ASCII characters using curses library
-- **Rendering Method**: Column-based raycasting
-- **Frame Rate**: ~60 FPS (16ms timeout)
-- **Collision Detection**: Grid-based boundary checking
-- **Map Representation**: 2D array (1 = wall, 0 = passage)
+* **Sprache**: Python 3
+* **Rendering**: ASCII-Zeichen mit der curses-Bibliothek
+* **Rendering-Methode**: Spaltenbasiertes Raycasting
+* **Bildrate**: ~60 FPS (16 ms Timeout)
+* **Kollisionserkennung**: Gitterbasierte Abfrage
+* **Kartenrepräsentation**: 2D-Array (1 = Wand, 0 = Gang)
 
-## Troubleshooting
+## Fehlerbehebung
 
-### Windows Issues
+### Windows-Probleme
 
-If you encounter problems on Windows:
-1. Install Windows Terminal for better Unicode support
-2. Or use WSL (Windows Subsystem for Linux)
-3. Alternative: Try `windows-curses` package:
+Falls es unter Windows zu Problemen kommt:
+
+1. Windows Terminal für bessere Unicode-Unterstützung verwenden
+2. Alternativ WSL (Windows Subsystem for Linux) nutzen
+3. Oder das Paket `windows-curses` installieren:
+
 ```bash
 pip install windows-curses
 ```
 
-### Terminal Size
+### Terminal-Größe
 
-If the display looks broken, resize your terminal to at least 80x24 characters.
+Falls die Anzeige fehlerhaft aussieht, stelle sicher, dass dein Terminal mindestens **80x24** Zeichen groß ist.
 
-### Performance Issues
+### Performance-Probleme
 
-- Reduce `num_rays` for faster rendering
-- Decrease maze size
-- Increase `stdscr.timeout()` value
+* `num_rays` reduzieren
+* Labyrinth-Größe verkleinern
+* `stdscr.timeout()` erhöhen
 
-## Future Enhancements
+## Zukünftige Erweiterungen
 
-- [ ] Textured walls with different characters/colors
-- [ ] Multiple floor levels
-- [ ] Enemies/collectibles
-- [ ] Save/load maze feature
-- [ ] Different maze generation algorithms
-- [ ] Sound effects (terminal beep)
-- [ ] Multiplayer support
+* [ ] Texturierte Wände mit unterschiedlichen Zeichen/Farben
+* [ ] Mehrere Ebenen
+* [ ] Gegner / Sammelobjekte
+* [ ] Speichern/Laden von Labyrinthen
+* [ ] Weitere Labyrinth-Algorithmen
+* [ ] Soundeffekte (Terminal-Beep)
+* [ ] Multiplayer-Unterstützung
 
-## Contributing
+## Mitwirken
 
-Contributions are welcome! Feel free to:
-- Report bugs
-- Suggest new features
-- Submit pull requests
-- Improve documentation
+Beiträge sind willkommen!
 
-## License
+* Bugs melden
+* Feature-Ideen vorschlagen
+* Pull Requests einreichen
+* Dokumentation verbessern
 
-This project is licensed under the MIT License - see the [LICENSE](LICENSE) file for details.
+## Lizenz
 
-## Acknowledgments
+Dieses Projekt steht unter der **MIT-Lizenz** – siehe die Datei [LICENSE](LICENSE) für Details.
 
-- Inspired by classic games like Wolfenstein 3D and Doom
-- Raycasting technique based on Lode Vandevenne's raycasting tutorial
-- Maze generation using classic recursive backtracking algorithm
+## Danksagungen
 
-## Author
+* Inspiriert von klassischen Spielen wie *Wolfenstein 3D* und *Doom*
+* Raycasting-Technik basierend auf dem Tutorial von Lode Vandevenne
+* Labyrinth-Generierung mit klassischem rekursivem Backtracking
 
-Created with ❤️ by [Your Name]
+## Autor
+
+Erstellt mit ❤️ von **[Dein Name]**
 
 ---
 
-**Enjoy exploring the mazes! 🎮**
+**Viel Spaß beim Erkunden der Labyrinthe! 🎮**
