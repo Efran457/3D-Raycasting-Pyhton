@@ -58,25 +58,8 @@ W/S: Bewegen | A/D: Drehen | M: Karte | R: Neues Labyrinth | Q: Beenden
 
 ### Voraussetzungen
 
-* Python 3.x
-* Terminal mit Unicode-Unterstützung (die meisten modernen Terminals)
-
-### Einrichtung
-
-1. Repository klonen:
-
-```bash
-git clone https://github.com/yourusername/3d-looker.git
-cd 3d-looker
-```
-
-2. Spiel starten:
-
-```bash
-python 3DLooker.py
-```
-
-Keine zusätzlichen Abhängigkeiten notwendig – es wird nur die integrierte **curses**-Bibliothek von Python verwendet.
+* Windows
+* Unziper (ist normall schon in Windows)
 
 ## Steuerung
 
@@ -117,46 +100,6 @@ Die Labyrinthe werden mit dem **rekursiven Backtracking-Algorithmus** erzeugt:
 
 Das Ergebnis ist ein „perfektes Labyrinth“ – zwischen zwei Punkten existiert genau ein Weg.
 
-## Anpassungen
-
-### Labyrinth-Größe ändern
-
-In der `main()`-Funktion:
-
-```python
-maze_width = 21   # Muss eine ungerade Zahl sein
-maze_height = 15  # Muss eine ungerade Zahl sein
-```
-
-### Sichtfeld (Field of View) ändern
-
-```python
-fov = math.pi / 3  # 60 Grad (π/3 Radiant)
-```
-
-### Bewegungsgeschwindigkeit anpassen
-
-In der `Player`-Klasse:
-
-```python
-def move_forward(self, game_map):
-    new_x = self.x + self.dir_x * 0.3  # Wert ändern, um Geschwindigkeit anzupassen
-```
-
-### Schattierung anpassen
-
-In der Raycasting-Schleife:
-
-```python
-if distance < 2:
-    char = "#"
-elif distance < 4:
-    char = "+"
-elif distance < 8:
-    char = "-"
-# Weitere Stufen hinzufügen oder Zeichen ändern
-```
-
 ## Technische Details
 
 * **Sprache**: Python 3
@@ -168,27 +111,9 @@ elif distance < 8:
 
 ## Fehlerbehebung
 
-### Windows-Probleme
-
-Falls es unter Windows zu Problemen kommt:
-
-1. Windows Terminal für bessere Unicode-Unterstützung verwenden
-2. Alternativ WSL (Windows Subsystem for Linux) nutzen
-3. Oder das Paket `windows-curses` installieren:
-
-```bash
-pip install windows-curses
-```
-
 ### Terminal-Größe
 
-Falls die Anzeige fehlerhaft aussieht, stelle sicher, dass dein Terminal mindestens **80x24** Zeichen groß ist.
-
-### Performance-Probleme
-
-* `num_rays` reduzieren
-* Labyrinth-Größe verkleinern
-* `stdscr.timeout()` erhöhen
+Es könnte sein dass es kaputt geht wenn sie dass fenster Fergrößern
 
 ## Zukünftige Erweiterungen
 
@@ -221,7 +146,8 @@ Dieses Projekt steht unter der **MIT-Lizenz** – siehe die Datei [LICENSE](LICE
 
 ## Autor
 
-Erstellt mit ❤️ von **[Dein Name]**
+Erstellt mit ❤️ von **Initys**
+Youtube📹 Kanal: [https://www.youtube.com/@Initys-unityGames]
 
 ---
 
