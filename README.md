@@ -6,7 +6,7 @@ This is a 3D Racasting programm that uses a python library called curses (curses
 A terminal-based 3D maze explorer using ASCII raycasting rendering. Navigate through procedurally generated labyrinths in your command line!
 
 ![3D Looker Demo](https://img.shields.io/badge/Python-3.x-blue.svg)
-![Platform](https://img.shields.io/badge/platform-Linux%20%7C%20macOS%20%7C%20Windows-lightgrey.svg)
+![Platform](https://img.shields.io/badge/platform-Windows-blue.svg)
 
 ## Features
 
