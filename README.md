@@ -40,7 +40,7 @@ Ein terminalbasierter 3D-Labyrinth-Explorer mit ASCII-Raycasting-Rendering. Erku
 | Taste | Aktion                     |
 | ----- | -------------------------- |
 | `WASD`| Bewegung                   |
-| `↑←↓→`| Nach rechts drehen         |
+| `↑←↓→`| Umdrehn / Umschauen        |
 | M     | Minimap ein-/ausblenden    |
 | I     | Info-Tab ein-/ausblenden   |
 | R     | Neues Labyrinth generieren |
