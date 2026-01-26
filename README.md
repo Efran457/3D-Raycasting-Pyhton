@@ -35,22 +35,17 @@ Ein terminalbasierter 3D-Labyrinth-Explorer mit ASCII-Raycasting-Rendering. Erku
 * Windows
 * Unziper (ist normall schon in Windows)
 
-## Steuerung (_In der Neuseten Version_)
+## Steuerung
 
-| Taste     | Aktion                     |
-| --------- | -------------------------- |
-| `W` / `↑` | Vorwärts bewegen           |
-| `A` / `↓` | Links bewegen              |
-| `S`       | Rückwärts bewegen          |
-| `D`       | Rechst bewegen             |
-| `←`       | Nach links drehen          |
-| `→`       | Nach rechts drehen         |
-| `↑`       | Nach oben drehen           |
-| `↓`       | Nach unten drehen          |
-| `M`       | Minimap ein-/ausblenden    |
-| `I`       | InfoTab ein-/ausblenden    |
-| `R`       | Neues Labyrinth generieren |
-| `Q`       | Spiel beenden              |
+| Taste | Aktion                     |
+| ----- | -------------------------- |
+| `WASD`| Bewegung                   |
+| `↑←↓→`| Nach rechts drehen         |
+| M     | Minimap ein-/ausblenden    |
+| I     | Info-Tab ein-/ausblenden   |
+| R     | Neues Labyrinth generieren |
+| Q     | Spiel beenden              |
+
 
 ## Funktionsweise
 
