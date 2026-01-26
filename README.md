@@ -35,7 +35,7 @@ Ein terminalbasierter 3D-Labyrinth-Explorer mit ASCII-Raycasting-Rendering. Erku
 * Windows
 * Unziper (ist normall schon in Windows)
 
-## Steuerung
+## Steuerung _(in der neusten Version)_
 
 | Taste | Aktion                     |
 | ----- | -------------------------- |
