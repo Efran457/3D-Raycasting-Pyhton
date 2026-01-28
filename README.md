@@ -82,7 +82,7 @@ Ein terminalbasierter 3D-Labyrinth-Explorer mit ASCII-Raycasting-Rendering. Erku
 **Eigenschaften:**
 - Name
 - Lautstärke (0-100)
-- Musik (.mp3 oder .wav)
+- Musik (.mp3 oder .wav Songs werden in Data/Music gespeichert _wenn keine music gefunden wird dann wird mann ni´x im spiel hören_)
 - Ausgewählte Kachel
 
 ### Tipps
@@ -90,6 +90,8 @@ Ein terminalbasierter 3D-Labyrinth-Explorer mit ASCII-Raycasting-Rendering. Erku
 ✓ Ränder intakt lassen  
 ✓ Layout vorher planen  
 ✓ Level im Spiel testen  
+✓ Lade Neue song im folder Data/Music hoch
+✓ Für die nerds die Welten.json datein werden in Data/Worlds gespeicherd
 
 ### Standard-Einstellungen
 - Musik: `BG.mp3`
