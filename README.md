@@ -148,9 +148,9 @@ Es könnte sein dass es kaputt geht wenn sie dass fenster Fergrößern
 ## Zukünftige Erweiterungen
 
 * [x] Wände mit unterschiedlichen Zeichen/Farben
+* [x] Speichern/Laden von Labyrinthen und ein Editor
 * [ ] Mehrere Ebenen
 * [ ] Gegner / Sammelobjekte
-* [ ] Speichern/Laden von Labyrinthen
 * [ ] Weitere Labyrinth-Algorithmen
 * [ ] Soundeffekte (Terminal-Beep)
 * [ ] Multiplayer-Unterstützung
@@ -177,4 +177,4 @@ Beiträge sind willkommen!
 
 ---
 
-**Viel Spaß beim Erkunden der Labyrinthe! 🎮**
+**Viel Spaß beim Erkunden der Labyrinthe! 🎮 _oder Labyrinthe erstellen_**
