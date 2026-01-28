@@ -46,6 +46,60 @@ Ein terminalbasierter 3D-Labyrinth-Explorer mit ASCII-Raycasting-Rendering. Erku
 | R     | Neues Labyrinth generieren |
 | Q     | Spiel beenden              |
 
+# Level Editor Anleitung
+
+## Editor Benutzen
+
+### Weltauswahl
+- **A/D oder Pfeiltasten**: Zwischen Welten navigieren
+- **LEERTASTE**: Welt auswählen zum Bearbeiten
+- **ESC**: Programm beenden
+
+### Neue Welt erstellen
+1. `[Create New World]` auswählen
+2. Weltnamen eingeben
+3. Welt wird mit automatischen Rändern erstellt
+
+### Bewegung
+- **Pfeiltasten**: Cursor bewegen (angezeigt als `V`)
+
+### Kacheln platzieren
+- **E**: Nächste Kachel
+- **Q**: Vorherige Kachel
+- **LEERTASTE**: Kachel am Cursor platzieren
+
+**Kacheltypen:**
+- `0` = Leerer Raum
+- `1` = Wand `#`
+- `2` = Farbige Wand `=`
+
+### Eigenschaften bearbeiten
+- **A/D**: Zwischen Eigenschaften navigieren
+- **ENTER**: Ausgewählte Eigenschaft bearbeiten
+- **S**: Änderungen speichern
+- **ESC**: Zurück zur Weltauswahl
+
+**Eigenschaften:**
+- Name
+- Lautstärke (0-100)
+- Musik (.mp3 oder .wav)
+- Ausgewählte Kachel
+
+### Tipps
+✓ Oft speichern mit **S**  
+✓ Ränder intakt lassen  
+✓ Layout vorher planen  
+✓ Level im Spiel testen  
+
+### Standard-Einstellungen
+- Musik: `BG.mp3`
+- Lautstärke: 50%
+- Größe: 50×20 Kacheln
+- Automatische Ränder
+
+---
+
+**Viel Spaß beim Level erstellen!**
 
 ## Funktionsweise
 
